@@ -466,6 +466,14 @@
         Id="4d8bec52-9d97-47d8-8cfd-185a5a2bb135"
         name="strin g" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b87dd41b-c3fb-4cff-9ecc-39f08aad7257"
+        name="gtdbggfhyr'"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

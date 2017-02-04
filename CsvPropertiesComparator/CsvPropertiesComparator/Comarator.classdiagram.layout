@@ -60,5 +60,12 @@
         <classShapeMoniker Id="885faa75-c894-4e80-b3ab-1dfe1b8ae9ed" />
       </nodes>
     </generalizationConnector>
+    <classShape Id="7095c346-c272-411b-ac26-a5fd45d75528" absoluteBounds="0.5, 2, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="4e6734c1-3a2b-441d-a99e-4cc5f3c0dcd1" LastKnownName="gtdbggfhyr'" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="c8bb770a-5ef2-455e-88f4-c604acd84820" isExpanded="false" absoluteBounds="0.515, 2.39, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2e6c202c-8c86-4eb7-b7c1-fb3f48cfea1f" absoluteBounds="0.5149999999999999, 2.6011718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>
