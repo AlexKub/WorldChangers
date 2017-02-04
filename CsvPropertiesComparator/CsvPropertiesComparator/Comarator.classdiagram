@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41fea14c-2719-4901-b072-9ce211e52d72" name="Comarator" linkedPackageId="20f14596-2f83-445f-b580-c866374eb88c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7c8ee0f1-84b6-44a4-85e9-900312facc1f">
+      <profileInstance Id="d9af7044-4ef6-401f-9557-aac345212ddf" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0b7215cb-12bc-428e-8436-42e1e6fb6367">
+      <profileInstance Id="5f513e78-3b60-4af3-b32b-45e46abca2df" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c4cd085-34f0-4613-826e-b2b094deb0ac" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="866ad4d9-df80-4976-bd34-99cd97c34813" />
+        <ownedOperationsInternal>
+          <operation Id="784ed5f3-07e6-4aa3-9ece-9ece027ae577" name="button_selectPropertiesClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e5c949c-2b43-44e6-81d5-6e640308cb1b" />
+          </operation>
+          <operation Id="deabdff7-a48f-4ce0-8ef7-e88d4bb22c5a" name="button_selectCsvPathClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d4ec8573-52b3-45fa-92cc-8b8aaed9f900" />
+          </operation>
+          <operation Id="d6de9e13-d78c-4626-961e-ab85672cef2e" name="button_ConvertToCsvClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf9f1dc3-4c7c-409a-88c8-3247fe769db0" />
+          </operation>
+          <operation Id="6121e3a3-d610-47b6-9f24-ff1fdcfe46be" name="_ctor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a6b06a3-1c95-444b-8d27-f55bd7f86979" />
+          </operation>
+          <operation Id="5480906b-9036-45d8-91d3-efb2ecfe3e98" name="button_selectChangedPropertiesFilePath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3ecf2162-b56c-49ce-8b67-957283a12856" />
+          </operation>
+          <operation Id="b9cb48cd-bd25-41e2-b933-0c4d04400572" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b62d066-9965-4dab-b0e1-61551e24ff46" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3a2d533-bd5b-4d4c-b20c-fc5332d406d7" name="FileManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="de69585f-8ccc-4e83-a527-e7290b3fe9fe" />
+        <ownedOperationsInternal>
+          <operation Id="7dd73f62-b6b3-4e85-b5ae-42348a057ea4" name="ToCSV" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="223d0a50-5bdb-4bcb-97ee-96a11bfff101" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dba2a53c-fc70-4694-9c1c-0732bf90afea" direction="Return">
+                  <elementDefinition Id="83810100-0a86-4c86-bfbc-f112868b3744" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="50c62382-19b8-4662-aa4b-59c52f423023" LastKnownName="CSV_File" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="05da83f9-37bb-4b22-a0a2-75c727d4b52a" name="outputPath" direction="In" isUnique="false">
+                  <elementDefinition Id="9661c575-0df0-4def-9317-95b1048f249e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e7c1b375-30d9-4fa5-bb76-8ae4d20d687e" name="IEnumerable&lt;Parameters&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="5f05b99c-4d78-4d7e-a914-ea9a56151802" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5215ec2a-3085-4389-8745-919dee122078" name="Compare" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a40b65c4-a3f8-4fbd-b0a3-8a91cd11d64b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="78e71967-2922-4e29-a886-46a1280f5083" name="Properties_old" direction="In" isUnique="false">
+                  <elementDefinition Id="c153fe18-e5bb-4d3f-9ca9-6e12893bcd1e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="57e4992d-b11b-48be-823a-04062c76a6eb" name="Properties_new" direction="In" isUnique="false">
+                  <elementDefinition Id="8e059d4b-21ee-4ec4-adb7-d5362de5a572" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d0bc8436-99bb-443d-9744-1acecdaac2d5" name="CSV_File" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cc6d85a3-602d-4426-9e35-3fee2154ce30" />
+        <generalsInternal>
+          <generalization Id="f5a18a76-ab77-49e7-bb34-fe81bd559ba1" isSubstitutable="false">
+            <classMoniker Id="05824e3b-6402-4771-8b45-114321ff6a98" LastKnownName="File" />
+            <elementDefinition Id="4ec593ce-77cd-46cc-91c1-d5ae7205ee48" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="32083ccd-6762-4625-9287-0af21aaa25aa" name="Empty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ddfc87a7-adab-40ec-b770-52ff8725df8c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2dd72d7e-a707-4dac-b7cd-a60227e09a5b" name="ReadParameters" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f6b28535-c2f4-4537-9883-db8d89d66282" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="69c00e15-6912-4ed5-be8e-5fe456fbb3a3" direction="Return">
+                  <elementDefinition Id="15f69866-f711-445d-8403-8c2fb102a0bf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="53fadf1b-089e-4dbd-ab7d-6b5f5cd04cca" LastKnownName="IEnumerable&lt;Parameter&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="70d01c62-9685-4f9d-bdff-f4531f5015e9" name="Parameter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0ff8c652-ef37-4dec-9fd6-9f50321bf6e5" />
+        <ownedAttributesInternal>
+          <property Id="507d3bdc-0a7e-4ce2-ad23-2773deb2cb3d" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8541c727-0a94-437e-9a5d-b4551296398e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="061f4056-bc19-4aa0-9f87-4d9da449668c" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="c527611f-a9a6-4d59-ab7f-d6ef93f39db9" name="Value_Eng" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1dcde6c-36f3-44cb-8542-3d5c4ff51682" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f40bd0e-099c-4e7d-b698-9f3317d9848d" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="a5fdcb53-54e2-4cc7-b800-10b79f99b467" name="Value_Rus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="73d5d7f0-2976-4930-85da-2301c74c2ab2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ad324579-003b-472e-a937-552c8ded4612" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7656bf0b-02f8-4b4c-86d2-c35b5201dee3" name="ToHTML" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="060aa619-9adc-4959-b24f-940dabeb7303" />
+          </operation>
+          <operation Id="e99730f5-7c2e-4df0-bca8-c62fb26822b8" name="FromHTML" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="922f6888-104b-4ebf-b94e-afaaa0b52d19" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="53fadf1b-089e-4dbd-ab7d-6b5f5cd04cca" name="IEnumerable&lt;Parameter&gt;" isAbstract="false" isLeaf="false" cachedFullName="IEnumerable&lt;Parameter&gt;">
+        <elementDefinition Id="7e0aa983-70ca-4321-9d95-e96e10e7c9ae" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1bc913ed-8ba7-45a7-ae92-9b52cc3689bc" name="Properties_File" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93727be0-8fcc-4cd6-af98-94dd7db08725" />
+        <generalsInternal>
+          <generalization Id="dc8a9378-19f0-4a1b-9e76-06caa1674089" isSubstitutable="false">
+            <classMoniker Id="05824e3b-6402-4771-8b45-114321ff6a98" LastKnownName="File" />
+            <elementDefinition Id="27287ffd-b31c-45bc-b74d-705f8c9703a6" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="96ba7b8d-9c37-4e21-94f7-60fc9e39878e" name="ReadParameters" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3d2891a9-054b-478a-96ab-33ea145e3d32" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2f3358e5-d397-4302-939a-1778a436f016" direction="Return">
+                  <elementDefinition Id="2c607530-7785-47e6-b30d-55e1df98e1a2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81fb1c9a-a067-4eb0-ac37-514dd50e19eb" LastKnownName="IEnumerable&lt;Parameter&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="81fb1c9a-a067-4eb0-ac37-514dd50e19eb" name="IEnumerable&lt;Parameter&gt;" isAbstract="false" isLeaf="false" cachedFullName="IEnumerable&lt;Parameter&gt;">
+        <elementDefinition Id="7e0aa983-70ca-4321-9d95-e96e10e7c9ae" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d5de836a-c117-4343-a021-50cd346050cb" name="FileInfo" isAbstract="false" isLeaf="false" cachedFullName="FileInfo">
+        <elementDefinition Id="d1666395-0044-4dbd-8b5e-1071a8c1ac9f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="226c0e5a-ceec-424a-b6dc-525cb242a5ca" name="IEnumerable&lt;Parameter&gt;" isAbstract="false" isLeaf="false" cachedFullName="IEnumerable&lt;Parameter&gt;">
+        <elementDefinition Id="7e0aa983-70ca-4321-9d95-e96e10e7c9ae" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="05824e3b-6402-4771-8b45-114321ff6a98" name="File" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="552a124a-616c-4ccc-a0c8-2c73732cf37e" />
+        <ownedAttributesInternal>
+          <property Id="8cee6c42-8378-4a76-9aed-0709b8b9af02" name="Path" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ede00c58-00cd-448b-8f49-6521b6cba294" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d5de836a-c117-4343-a021-50cd346050cb" LastKnownName="FileInfo" />
+            </type_NamedElement>
+          </property>
+          <property Id="144b2aaf-c48c-4858-96c8-c6cac6a3ec13" name="Delimiter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9fcb58f-f361-4e9d-b844-105b56903513" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fc05185a-fcac-48ec-b251-443d3cf1eb06" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="216d833e-d1d4-49cf-ad90-59020751f14d" name="ReadParameters" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d7a68a8c-3da0-43a5-98a2-be70b65af861" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="09e20e57-5292-4901-a499-3fde828345c3" direction="Return">
+                  <elementDefinition Id="318bd337-7a50-454e-bcd4-1b7b27d41ed2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="226c0e5a-ceec-424a-b6dc-525cb242a5ca" LastKnownName="IEnumerable&lt;Parameter&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a90ed112-7418-4209-8398-50cb18d9fdc9" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff74c1ae-ad9e-42a5-bb27-8bb6c3691094" />
+          </operation>
+          <operation Id="d429bcf5-76ff-481d-91a1-9eada71e2343" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="993aa8c6-9569-4dec-b56a-592bc9d180d3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2a0f43c-0e4c-4f8a-a71e-ba5ed30354e9" name="FileInfo" direction="In" isUnique="false">
+                  <elementDefinition Id="2d40a7b3-b18a-43e1-acd2-bdc8d736d71e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="50c62382-19b8-4662-aa4b-59c52f423023" name="CSV_File" isAbstract="false" isLeaf="false" cachedFullName="CsvPropertiesComparator::CSV_File">
+        <elementDefinition Id="cc6d85a3-602d-4426-9e35-3fee2154ce30" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5f40bd0e-099c-4e7d-b698-9f3317d9848d" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="24c41926-26d1-4708-a9bb-6a743a621494" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ad324579-003b-472e-a937-552c8ded4612" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="24c41926-26d1-4708-a9bb-6a743a621494" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="061f4056-bc19-4aa0-9f87-4d9da449668c" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="24c41926-26d1-4708-a9bb-6a743a621494" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fc05185a-fcac-48ec-b251-443d3cf1eb06" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="24c41926-26d1-4708-a9bb-6a743a621494" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="20f14596-2f83-445f-b580-c866374eb88c" name="CsvPropertiesComparator">
+    <elementDefinition Id="ea098b23-2929-4790-9123-a8c94d489087" />
+  </package>
+</logicalClassDesignerModel>
